@@ -25,7 +25,7 @@ def add_task(title):
         "created": datetime.now().isoformat()
     })
     save_tasks(tasks)
-    print(f"Added [{next_id}] {title}")
+    print(f'Added: [{next_id}] "{title}"')
 
 def list_tasks(show_all=True):
     tasks = load_tasks()
