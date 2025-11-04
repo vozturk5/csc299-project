@@ -25,16 +25,19 @@ Use the `add` command to store (save) a new task:
 ```bash
 python task_cli.py add "Read PKMS paper"
 python task_cli.py add "Write study reflection"
+```
 
 ### 📋 List all tasks
 Use the list command to view every stored task:
 ```bash
 python task_cli.py list
+```
 
 ### 🔍 Search for tasks
 Use the search command to find tasks by keyword:
 ```bash
 python task_cli.py search PKMS
+```
 
 ### 📄 Data Storage
 After adding tasks, a tasks.json file is automatically created in the same folder.
