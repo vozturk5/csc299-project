@@ -42,6 +42,10 @@ python task_cli.py search PKMS
 ### 📄 Data Storage
 After adding tasks, a tasks.json file is automatically created in the same folder.
 
+
+---
+
+
 ## 🧠 Summary
 add → stores a task
 list → displays all tasks
