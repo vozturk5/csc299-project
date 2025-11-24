@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "title": "Finish CSC299 final project",
+    "tags": [
+      "school",
+      "urgent"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Do laundry",
+    "tags": [
+      "home"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "final project",
+    "done": false,
+    "priority": "medium",
+    "deadline": null,
+    "tags": [
+      "python",
+      "csc299"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "midterm",
+    "done": false,
+    "priority": "high",
+    "deadline": "2025-11-24",
+    "tags": [
+      "csc299",
+      "exam"
+    ]
+  }
+]
