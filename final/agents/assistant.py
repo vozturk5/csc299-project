@@ -1,36 +1,32 @@
+import os
 from openai import OpenAI
-client = OpenAI()
 
 def summarize_all_notes(notes):
     """
-    Summarize all valid notes (dict entries only).
+    Summarizes all notes using GPT-5-mini (or any model you choose).
+    Requires OPENAI_API_KEY to be set in environment variables.
     """
 
-    # Filter out invalid entries (strings, corrupted entries)
-    clean = []
-    for n in notes:
-        if isinstance(n, dict) and "id" in n and "text" in n:
-            clean.append(n)
+    api_key = os.getenv("OPENAI_API_KEY")
 
-    if not clean:
-        return "No valid notes to summarize."
+    if not api_key:
+        return "AI Error: No API key found. Please set OPENAI_API_KEY environment variable."
 
-    # Combine notes into one block of text
-    joined_text = "\n".join([f"{n['id']}. {n['text']}" for n in clean])
+    client = OpenAI(api_key=api_key)
+
+    if not notes:
+        return "There are no notes to summarize."
+
+    joined = "\n".join([f"[{n['id']}] {n['text']}" for n in notes])
 
     try:
         response = client.chat.completions.create(
             model="gpt-5-mini",
             messages=[
-                {
-                    "role": "user",
-                    "content": f"Summarize these notes concisely:\n\n{joined_text}"
-                }
-            ]
+                {"role": "user", "content": f"Summarize the following notes:\n{joined}"}
+            ],
+            max_completion_tokens=150
         )
-
         return response.choices[0].message.content
-
     except Exception as e:
-        return f"AI Error: {e}"
-
+        return f"AI Error: Could not read response.\n{e}"
