@@ -1,22 +1,20 @@
 [
   {
     "id": 1,
-    "text": "i love myself"
+    "text": "Review sorting algorithms and complexity proofs.",
+    "created": "2025-11-25T22:30:41.845067",
+    "task_id": 1
   },
   {
     "id": 2,
-    "text": "merhabalar bebeklerim"
+    "text": "Test stats dashboard and run final debugging tonight.",
+    "created": "2025-11-25T22:30:45.688651",
+    "task_id": 2
   },
   {
     "id": 3,
-    "text": "i love my mom so much"
-  },
-  {
-    "id": 4,
-    "text": "hello"
-  },
-  {
-    "id": 5,
-    "text": "hello"
+    "text": "Delete unnecessary screenshots older than one month.",
+    "created": "2025-11-25T22:30:50.140572",
+    "task_id": 3
   }
 ]

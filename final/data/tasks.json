@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Study for Algorithms midterm",
+    "done": false,
+    "priority": "high",
+    "deadline": "2025-12-03",
+    "tags": [
+      "school",
+      "exam",
+      "algorithms"
+    ],
+    "notes": []
+  },
+  {
+    "id": 2,
+    "title": "Finish CSC 299 final project implementation",
+    "done": false,
+    "priority": "medium",
+    "deadline": "2025-11-25",
+    "tags": [
+      "school",
+      "project",
+      "coding"
+    ],
+    "notes": []
+  },
+  {
+    "id": 3,
+    "title": "Organize desktop files and clean old downloads",
+    "done": false,
+    "priority": "low",
+    "deadline": null,
+    "tags": [
+      "personal",
+      "cleanup"
+    ],
+    "notes": []
+  }
+]
